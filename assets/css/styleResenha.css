@@ -8,7 +8,6 @@ body {
     background: linear-gradient(to bottom, #141414, #000000);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #ffffff;
-    min-height: 100vh;
     padding-bottom: 120px;
 }
 
@@ -33,7 +32,8 @@ header:hover {
 }
 
 header img {
-    max-width: 15%;
+    width: 180px;
+    height: 80px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -123,13 +123,15 @@ main {
 }
 
 footer {
-    color: #d4d4d4;
-    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.95rem;
+    color: #999;
+    border-top: 2px solid rgba(229, 9, 20, 0.3);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
     bottom: 0;
     position: fixed;
-    width: 100%;
-    padding: 25px;
-    font-size: 0.95rem;
-    border-top: 2px solid rgba(229, 9, 20, 0.4);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
 }
